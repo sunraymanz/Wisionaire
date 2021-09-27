@@ -11,7 +11,7 @@ public class DialogueList : MonoBehaviour
     {
         dialogueResult.name = "Wise Girl"; 
         dialogueResult.sentences = GetSentences(id);
-        if (id == 0)
+        if (id == 0 || id == 6)
         { dialogueResult.isEndDialogue = true; }
         else { dialogueResult.isEndDialogue = false; }
         return dialogueResult;
@@ -58,7 +58,7 @@ public class DialogueList : MonoBehaviour
                "Hmmm........" ,
                "................" ,
                "........................Ah ha!" ,
-               "I don't know it too! hehe >v< too bad~" ,
+               "I don't know it too! hehe >v< too bad~" 
                };
         }
         else if (id == 4)
@@ -69,7 +69,7 @@ public class DialogueList : MonoBehaviour
                "Hmmm........" ,
                "................" ,
                "........................Ah ha!" ,
-               "It's so easy! Here's the answer~" ,
+               "It's so easy! Here's the answer~" 
                };
         }
         else if (id == 5)
@@ -80,7 +80,16 @@ public class DialogueList : MonoBehaviour
                "Hmmm........" ,
                "................" ,
                "........................Ah ha!" ,
-               "I know it but i won't tell ya! boooo~" ,
+               "I know it but i won't tell ya! boooo~" 
+               };
+        }
+        else if (id == 6)
+        {
+            temp = new string[]
+               {
+                "Amazing!!!~ You can answer it all correctly!",
+               "Alright! about time to end this game " ,
+               "!!! YOU ARE THE WINNER !!!" 
                };
         }
         return temp;

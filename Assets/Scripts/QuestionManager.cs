@@ -39,8 +39,9 @@ public class QuestionManager : MonoBehaviour
         else 
         {
             Debug.Log("Out of Question");
-            winCover.SetActive(true);
-            FindObjectOfType<GameManager>().DelayRestartGame(2f);
+            triggerToken.TriggerWinDialogue();
+            //winCover.SetActive(true);
+            //FindObjectOfType<GameManager>().DelayRestartGame(2f);
         }
         
     }

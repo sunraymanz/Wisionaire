@@ -67,6 +67,10 @@ public class DialogueTrigger : MonoBehaviour
     {
         isStart = FindObjectOfType<DialogueManager>().StartDialogue(0);
     }
+    public void TriggerWinDialogue()
+    {
+        isStart = FindObjectOfType<DialogueManager>().StartDialogue(6);
+    }
 
     public void TriggerNextDialogue()
     {

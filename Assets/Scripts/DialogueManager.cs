@@ -84,6 +84,8 @@ public class DialogueManager : MonoBehaviour
             {
                 loseCover.SetActive(true);
             }
+            else
+            { winCover.SetActive(true); }
             FindObjectOfType<GameManager>().DelayRestartGame(2f);
         }
     }
